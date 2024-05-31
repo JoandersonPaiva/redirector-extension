@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "redirector",
+  "version": "1.0.0",
+  "description": "A simple React extension",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "scripting",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": ["*://*/*"]
+}
